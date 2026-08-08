@@ -1,0 +1,6 @@
+# Runtime dependencies
+numpy>=1.24
+matplotlib>=3.7
+
+# Test dependencies
+pytest>=7.4
