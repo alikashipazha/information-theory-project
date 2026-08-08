@@ -58,28 +58,28 @@ The project implements the specification in `docs/Project_CN1.pdf`. Section numb
 ## 📁 Repository structure
 
 ```directory
-information-theory-project/
+CN1-Course-Project/
 │
 ├── src/
-│   ├── __init__.py
-│   ├── arq_protocol.py
-│   ├── data_link_layer.py
-│   ├── physical_layer.py
-│   ├── security.py
-│   ├── gui.py
-│   ├── performance_analysis.py
-│   └── main.py
+│   ├── __init__.py                # Package declaration
+│   ├── security.py                # Rotational XOR encryption (§5.3)
+│   ├── data_link_layer.py         # Framing, stuffing, delimiting, Hamming, CRC (§4.1, §4.2)
+│   ├── physical_layer.py          # B8ZS/HDB3, BPSK/16-QAM, AWGN (§2, §3)
+│   ├── arq_protocol.py            # Selective Repeat sliding window (§4.3)
+│   ├── performance_analysis.py    # Eb/N0 and window sweep (§5.1)
+│   ├── gui.py                     # Tkinter dashboard, three tabs
+│   └── main.py                    # Entry point and GUI launcher
 │
 ├── tests/
-│   └── test_simulator.py
+│   └── test_simulator.py          # 34 regression tests across all layers
 │
 ├── docs/
-│   ├── Project_requirements.pdf
-│   └── Project_report.pdf
+│   ├── Project_report.pdf         # Project report
+│   └── Project_requirements.pdf   # Project requirements
 │
-├── README.md
-├── requirements.txt
-└── run.py
+├── run.py                         # Launches the GUI
+├── requirements.txt               # Pinned dependencies
+└── README.md                      # This file
 ```
 
 ---
